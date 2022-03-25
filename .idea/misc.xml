@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/S545549/Desktop/SmartAttendance/app/src/main/res/drawable/logo.xml" value="0.196" />
+        <entry key="..\:/Users/S545549/Desktop/SmartAttendance/app/src/main/res/drawable/qr.xml" value="0.196" />
+        <entry key="..\:/Users/S545549/Desktop/SmartAttendance/app/src/main/res/layout/activity_student_class_list.xml" value="0.14010416666666667" />
         <entry key="app/src/main/res/drawable/border_rect_grey.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/btn_selector.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/et_bg.xml" value="0.2085" />
