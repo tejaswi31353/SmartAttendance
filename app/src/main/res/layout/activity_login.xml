@@ -9,11 +9,11 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
         android:id="@+id/logo"
         android:src="@drawable/logo"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="12dp"
         />
 
     <TextView
@@ -87,6 +87,20 @@
         android:background="@drawable/btn_selector"
         android:gravity="center"
         android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/student_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="Student Login"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textStyle="bold" />
