@@ -1,2 +1,4 @@
 # SmartAttendance
-Smart Attendance Android Mobile Application
+### Project name: Smart Attendance Management
+
+
