@@ -9,3 +9,4 @@ User-Friendly,
 Easy Attendance Reporting, Reduced Paperwork,
 One-Stop Attendance Solution.
 
+#### Activities:
