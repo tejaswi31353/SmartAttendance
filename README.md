@@ -10,3 +10,4 @@ Easy Attendance Reporting, Reduced Paperwork,
 One-Stop Attendance Solution.
 
 #### Activities:
+Login page: Generic login page for student and Professor.
