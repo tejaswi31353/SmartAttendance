@@ -21,6 +21,8 @@ Login page: Generic login page for student and Professor.
 * Professor Student-wise attendance list.
 * Generate class-wise bar code for scanning.
 * Settings -> Logout, Edit profile.
+#### Student Dashboard:
+
 
 
 
