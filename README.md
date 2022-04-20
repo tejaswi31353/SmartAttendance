@@ -47,8 +47,10 @@ Login page: Generic login page for student and Professor.
 * Settings -> Logout, Edit profile.
 
 #### Technical Stack:
-
-
+Android: Java, Xml. <br>
+Backend: Nodejs with MongoDB. <br>
+Barcode scanning will be implemented using Google Vision API. <br>
+The attendance list will be shown using different graphs like pie charts, bar graphs, etc. <br>
 
 
 
