@@ -14,5 +14,7 @@ Login page: Generic login page for student and Professor.
 #### Professor dashbord:
 * Professor Class list.
 * Add or remove classes.
+*Professor Class-wise student list.
+
 
 
