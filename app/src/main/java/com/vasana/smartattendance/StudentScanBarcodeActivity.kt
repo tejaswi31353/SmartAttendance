@@ -45,4 +45,22 @@ class StudentScanBarcodeActivity : AppCompatActivity() {
         binding.barcodeLine.startAnimation(aniSlide)
     }
 
+    private fun setupControls() {
+        barcodeDetector = BarcodeDetector.Builder(this).setBarcodeFormats(Barcode.ALL_FORMATS).build()
+        cameraSource = CameraSource.Builder(this, barcodeDetector).setRequestedPreviewSize(1920, 1080)
+            .setAutoFocusEnabled(true) //you should add this feature
+            .build()
+
+        binding.cameraSurfaceView.getHolder().addCallback(object : SurfaceHolder.Callback {
+            @SuppressLint("MissingPermission")
+            override fun surfaceCreated(holder: SurfaceHolder) {
+                try {
+                    //Start preview after 1s delay
+                    cameraSource.start(holder)
+                } catch (e: IOException) {
+                    e.printStackTrace()
+                }
+            }
+
+
 }
