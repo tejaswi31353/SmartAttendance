@@ -62,5 +62,57 @@ class StudentScanBarcodeActivity : AppCompatActivity() {
                 }
             }
 
+            @SuppressLint("MissingPermission")
+            override fun surfaceChanged(
+                holder: SurfaceHolder,
+                format: Int,
+                width: Int,
+                height: Int
+            ) {
+                try {
+                    cameraSource.start(holder)
+                } catch (e: IOException) {
+                    e.printStackTrace()
+                }
+            }
 
+            override fun surfaceDestroyed(holder: SurfaceHolder) {
+                cameraSource.stop()
+            }
+        })
+
+
+        barcodeDetector.setProcessor(object : Detector.Processor<Barcode> {
+            override fun release() {
+                Toast.makeText(applicationContext, "Scanner has been closed", Toast.LENGTH_SHORT)
+                    .show()
+            }
+
+            override fun receiveDetections(detections: Detector.Detections<Barcode>) {
+                val barcodes = detections.detectedItems
+                if (barcodes.size() == 1) {
+                    scannedValue = barcodes.valueAt(0).rawValue
+
+
+                    //Don't forget to add this line printing value or finishing activity must run on main thread
+                    runOnUiThread {
+                        cameraSource.stop()
+                        Toast.makeText(this@StudentScanBarcodeActivity, "value- $scannedValue", Toast.LENGTH_SHORT).show()
+                        finish()
+                    }
+                }else
+                {
+                    Toast.makeText(this@StudentScanBarcodeActivity, "value- else", Toast.LENGTH_SHORT).show()
+
+                }
+            }
+        })
+    }
+    private fun askForCameraPermission() {
+        ActivityCompat.requestPermissions(
+            this,
+            arrayOf(android.Manifest.permission.CAMERA),
+            requestCodeCameraPermission
+        )
+    }
 }
