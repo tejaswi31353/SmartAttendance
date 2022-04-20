@@ -1,11 +1,25 @@
 # SmartAttendance
-### Project name: Smart Attendance Management
 
-### Team Members: &nbsp; Manikanta Vasana,Jahnavi Dammannagari,Tejaswi Gannamaneni, Shiva Krishna Myakala
+### Application name: SAMS
 
-### Problem Statement: 
+## Team Members: &nbsp;
+Manikanta Vasana
+Tejaswi Gannamaneni
+Shiva Krishna Myakala
+Jahnavi Dammannagari
 
+### Problem Statement:
 The main objective of this application is to Automate the traditional way of recording attendance and provide an innovative and efficient way to visualize the attendance. A better way to store and retrieve attendance records. Drastically decrease the time taken to take attendance in class, thereby increasing the productivity in class.
+
+### Test Credentials
+Test Credentials are valid for both Student and Professor
+User ID: SAMS@gmail.com
+Password: SAMS@123$
+
+### Supported Devices
+MinSdk 21
+targetSdk 32
+Version "1.0"
 
 #### Advantages:
 User-Friendly,

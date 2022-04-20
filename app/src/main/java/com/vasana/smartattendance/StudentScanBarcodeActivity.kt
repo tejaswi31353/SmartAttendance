@@ -1,5 +1,6 @@
 package com.vasana.smartattendance
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -32,7 +33,7 @@ class StudentScanBarcodeActivity : AppCompatActivity() {
 
 
         if (ContextCompat.checkSelfPermission(
-                baseContext, android.Manifest.permission.CAMERA
+                baseContext, Manifest.permission.CAMERA
             ) != PackageManager.PERMISSION_GRANTED
         ) {
             askForCameraPermission()
@@ -111,7 +112,7 @@ class StudentScanBarcodeActivity : AppCompatActivity() {
     private fun askForCameraPermission() {
         ActivityCompat.requestPermissions(
             this,
-            arrayOf(android.Manifest.permission.CAMERA),
+            arrayOf(Manifest.permission.CAMERA),
             requestCodeCameraPermission
         )
     }
