@@ -24,6 +24,8 @@ Login page: Generic login page for student and Professor.
 #### Student Dashboard:
 * Student class list.
 * Select class -> Scan Professor Barcode page.
+* Student Class wise Attendance progress.
+* Settings -> Logout, Edit profile.
 
 
 
