@@ -22,6 +22,8 @@ Login page: Generic login page for student and Professor.
 * Generate class-wise bar code for scanning.
 * Settings -> Logout, Edit profile.
 #### Student Dashboard:
+* Student class list.
+* Select class -> Scan Professor Barcode page.
 
 
 
