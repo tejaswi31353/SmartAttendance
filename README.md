@@ -26,6 +26,8 @@ Login page: Generic login page for student and Professor.
 * Select class -> Scan Professor Barcode page.
 * Student Class wise Attendance progress.
 * Settings -> Logout, Edit profile.
+#### Technical Stack:
+
 
 
 
