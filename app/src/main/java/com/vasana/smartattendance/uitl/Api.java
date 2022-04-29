@@ -37,7 +37,7 @@ public interface Api {
     @GET("users/prof/{id}")
     Call<Professor> getProfessor(@Path("id") String userId);
 
-    @POST("attendance")
+    @POST("attendance/update")
     Call<PostAttendanceResponse> postAttendance(@Body PostAttendanceRequest request);
 
     @POST("attendance/fill")
