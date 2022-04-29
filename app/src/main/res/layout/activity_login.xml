@@ -9,11 +9,11 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
         android:id="@+id/logo"
         android:src="@drawable/logo"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="20dp"
         />
 
     <TextView
@@ -22,7 +22,7 @@
         android:layout_margin="10dp"
         android:gravity="center_horizontal"
         android:id="@+id/user_name"
-        android:text="SAMS."
+        android:text="Cat paws."
         android:textSize="24dp"
         android:textStyle="bold"
         android:visibility="visible" />
@@ -36,7 +36,6 @@
         android:text="Please sign in to continue using our app "
         android:textColor="@color/black"
         android:textSize="16dp" />
-
 
 
     <EditText
@@ -55,7 +54,9 @@
         android:maxLines="1"
         android:padding="15dp"
         android:textSize="16dp"
-        android:textStyle="bold" />
+        android:textStyle="bold" >
+        <requestFocus/>
+    </EditText>
 
     <EditText
         android:id="@+id/password"
@@ -101,6 +102,7 @@
         android:background="@drawable/btn_selector"
         android:gravity="center"
         android:text="Student Login"
+        android:visibility="gone"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textStyle="bold" />

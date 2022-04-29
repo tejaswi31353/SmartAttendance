@@ -3,6 +3,9 @@
     package="com.vasana.smartattendance">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -11,7 +14,7 @@
         android:allowBackup="true"
         android:icon="@drawable/logo_sams"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logo_sams"
+        android:name=".Appp"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartAttendance">
         <activity

@@ -12,11 +12,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.vasana.smartattendance.R;
 import com.vasana.smartattendance.pojo.MenuOption;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MenuRecycleAdapter extends RecyclerView.Adapter<MenuRecycleAdapter.MyViewHolder> {
 
-    private List<MenuOption> menuOptionList;
+    private List<MenuOption> menuOptionList = new ArrayList<>();
     private RecyclerClickListener recyclerClickListener;
 
     public RecyclerClickListener getRecyclerClickListener() {
@@ -55,16 +56,17 @@ public class MenuRecycleAdapter extends RecyclerView.Adapter<MenuRecycleAdapter.
 
     @NonNull
     @Override
-    public MenuRecycleAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.menu_row, parent, false);
         return new MyViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MenuRecycleAdapter.MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.title.setText(menuOptionList.get(position).getTitle());
         holder.subTitle.setText(String.valueOf(menuOptionList.get(position).getSubTitle()));
         holder.itemView.setOnClickListener(view -> {
+            if (recyclerClickListener!=null)
             recyclerClickListener.onclick(position);
         });
     }
