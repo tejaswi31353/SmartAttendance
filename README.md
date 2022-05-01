@@ -68,7 +68,8 @@ Login page: Generic login page for Student and Professor.
 - Able to check the attendance.
 - Generate Barcode for particular class.
 - Settings where you are able to update contact, Status and Logout.
- 
+
+Note: Generate BarCode only once per a day since we have added only one class. 
 
 #### **Student**
 - Login with the test credentials.
