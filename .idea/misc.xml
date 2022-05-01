@@ -7,7 +7,10 @@
         <entry key="..\:/Users/S545396/Documents/SEM - 2/Android/Final Project/SmartAttendance/app/src/main/res/layout/activity_student_attendance.xml" value="0.1" />
         <entry key="..\:/Users/S545551/AndroidStudioProjects/SmartAttendance/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.126" />
         <entry key="..\:/Users/S545551/AndroidStudioProjects/SmartAttendance/app/src/main/res/layout/activity_login.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/S545551/AndroidStudioProjects/SmartAttendance/app/src/main/res/layout/activity_professor_attendance_list.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/S545551/AndroidStudioProjects/SmartAttendance/app/src/main/res/layout/activity_professor_bar_code_generator.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/S545551/AndroidStudioProjects/SmartAttendance/app/src/main/res/layout/activity_professor_student_list.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/S545551/AndroidStudioProjects/SmartAttendance/app/src/main/res/layout/activity_student_attendance.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/S545551/AndroidStudioProjects/SmartAttendance/app/src/main/res/layout/activity_student_scan_barcode.xml" value="0.1" />
         <entry key="..\:/Users/S545551/AndroidStudioProjects/SmartAttendance/app/src/main/res/layout/update_user.xml" value="0.11510416666666666" />
         <entry key="app/src/main/res/drawable/border_rect_grey.xml" value="0.2085" />
