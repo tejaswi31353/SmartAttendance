@@ -1,6 +1,7 @@
 package com.vasana.smartattendance;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -146,18 +149,17 @@ public class ProfessorSettingsActivity extends BaseActivity {
 
     @OnClick(R.id.termsAndConditions)
     void tc() {
-        AdvancedWebView.Browsers.openUrl(this, "http://www.example.org/");
+        AdvancedWebView.Browsers.openUrl(this, "https://uma0441.github.io/samsterms_conditions/");
     }
 
     @OnClick(R.id.privacyPolicy)
     void pp() {
-        AdvancedWebView.Browsers.openUrl(this, "http://www.example.org/");
+        AdvancedWebView.Browsers.openUrl(this, "https://uma0441.github.io/samsterms_conditions/");
     }
 
     @OnClick(R.id.customerCare)
     void cc() {
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:" + "+18166898784"));
-        startActivity(callIntent);
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "+18166898784"));// Initiates the Intent
+        startActivity(intent);
     }
 }
